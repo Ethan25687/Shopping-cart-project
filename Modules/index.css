@@ -1,54 +1,146 @@
 /* Everything Ruleset */
 * {
     font-family: 'Gg Sans', sans-serif;
+    font-size: 18px;
+    color: #b9bbbe;
+}
+
+/* Homepage body */
+body {
+    margin-left: 160px;
+    padding: 0px 10px;
+    background-color: #36393f;
+}
+
+/* Used PC Parts Catergory */
+.categoryTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Shop Item Container */
+#app {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div.shopItemBoxOuter {
+    background-color: #41444B;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+    padding: 8px;
+    border-radius: 5px;
+    max-width: 34%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.shopItemImgWrapper {
+    background-color: #b9bbbe;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+    max-height: 250px;
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+.shopItemImg {
+    max-width:100%;
+    max-height:200px;
+}
+
+div.shopItemBoxInfo {
+    width: auto;
+    margin-top: 8px;
+}
+
+button.buy {
+    color: #fff;
+    background-color: #3AA85E;
+    border-radius: 3px;
+    border-style: none;
+    padding: 5px 10px;
+    font-size: 0.75em;
+    max-width: 175px;
+}
+
+button.buy:hover {
+    cursor: pointer;
+}
+
+button.buy:active {
+    filter: brightness(0.8);
 }
 
 /* The sidebar menu */
 .sidenav {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #2F3136;
-  overflow-x: hidden;
-  padding-top: 20px;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2F3136;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 24px;
-  color: #b9bbbe;
-  display: block;
+    padding: 6px 8px 6px 16px;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
 }
 
 .sidenav a:hover {
-  color: #fff;
+    color: #fff;
+    background-color: #37393F;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Body Styling */
-body {
-  margin-left: 160px;
-  padding: 0px 10px;
-  background-color: #36393f;
+.sidenav a:active {
+    filter: brightness(1.2);
 }
 
 /* Responsiveness */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+
+    * {
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (min-width: 480px) {
+    .shopItemBoxOuter {
+        width: 33.333%;
+    }
 }
 
 /* Fonts */
 @font-face {
-  font-family: 'Gg Sans';
-  src: local('Gg Sans Normal'), local('Gg-Sans-Normal'),
-    url('../Fonts/ggsans-Normal.woff2') format('woff2'),
-    url('../Fonts/ggsans-Normal.woff') format('woff'),
-    url('../Fonts/ggsans-Normal.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Gg Sans';
+    src: local('Gg Sans Normal'), local('Gg-Sans-Normal'),
+        url('../Fonts/ggsans-Normal.woff2') format('woff2'),
+        url('../Fonts/ggsans-Normal.woff') format('woff'),
+        url('../Fonts/ggsans-Normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
