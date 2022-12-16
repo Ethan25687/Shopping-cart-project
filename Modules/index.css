@@ -7,7 +7,6 @@
 
 /* Homepage body */
 body {
-    margin-left: 160px;
     padding: 0px 10px;
     background-color: #36393f;
 }
@@ -17,6 +16,7 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    margin: 10px;
 }
 
 /* Shop Item Container */
@@ -60,7 +60,7 @@ div.shopItemBoxInfo {
     margin-top: 8px;
 }
 
-button.buy {
+button.add {
     color: #fff;
     background-color: #3AA85E;
     border-radius: 3px;
@@ -70,56 +70,69 @@ button.buy {
     max-width: 175px;
 }
 
-button.buy:hover {
+button.add:hover {
     cursor: pointer;
 }
 
-button.buy:active {
+button.add:active {
     filter: brightness(0.8);
 }
 
-/* The sidebar menu */
-.sidenav {
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+/* The navbar menu */
+.navbar {
     background-color: #2F3136;
-    overflow-x: hidden;
-    padding-top: 20px;
+    overflow: hidden;
 }
 
 /* The navigation menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
+.navbar a {
+    float: left;
+    padding: 6px 8px;
     margin: 0px 10px;
+    text-align: center;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
     display: block;
+    max-width: 100px;
+    text-align: center;
 }
 
-.sidenav a:hover {
+.navbar a:hover {
     color: #fff;
     background-color: #37393F;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.sidenav a:active {
+.navbar a:active {
     filter: brightness(1.2);
+}
+
+.navbar a#cart {
+    float: right;
+}
+
+#cartsvg {
+    height: auto;
+    max-height: 24px;
+    filter: 
+        invert(90%)
+        sepia(4%)  
+        saturate(209%)  
+        hue-rotate(177deg) 
+        brightness(86%) 
+        contrast(82%);
 }
 
 /* Responsiveness */
 @media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
+    .navbar a {
+        font-size: 18px;
     }
 
-    .sidenav a {
-        font-size: 18px;
+    .navbar a#cart {
+        max-height: 24px;
     }
 
     * {
