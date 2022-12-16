@@ -20,28 +20,28 @@ addShopItem = (shopItem) => {  // addshopItem makes an object (tested. no it doe
 const shopItemArray = [
 addShopItem({
     'shopItemName':'Cooler Master Hyper212X',
-    'shopItemImage':'../Images/Cooler-Master-Hyper212X.jpg',
+    'shopItemImage':'./Images/Cooler-Master-Hyper212X.jpg',
     'shopItemDescription':'Tested, Works, runs smoothly and quietly',
     'shopItemPrice':'AU$40'
 }),
 
 addShopItem({
     'shopItemName':'AMD Ryzen 5 2600',
-    'shopItemImage':'../Images/AMD-Ryzen-5-2600.jpg',
+    'shopItemImage':'./Images/AMD-Ryzen-5-2600.jpg',
     'shopItemDescription':'Tested, Works and minor scratches to IHS',
     'shopItemPrice':'AU$120'
 }),
 
 addShopItem({
     'shopItemName':'EVGA GTX 1070',
-    'shopItemImage':'../Images/EVGA-GTX-1070.jpg',
+    'shopItemImage':'./Images/EVGA-GTX-1070.jpg',
     'shopItemDescription':'Tested, Works',
     'shopItemPrice':'AU$225'
 }),
 
 addShopItem({
     'shopItemName':'Kingston DDR3 4x8GB 1600MHZ',
-    'shopItemImage':'../Images/Kingston-4x8gb-ddr3-1600Mhz.jpg',
+    'shopItemImage':'./Images/Kingston-4x8gb-ddr3-1600Mhz.jpg',
     'shopItemDescription':'Tested, Works',
     'shopItemPrice':'AU$130'
 })
